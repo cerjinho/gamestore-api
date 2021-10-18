@@ -5,4 +5,5 @@ DeviseTokenAuth.setup do |config|
   config.token_lifespan = 1.weeks
   config.token_cost = Rails.env.test? ? 4 : 10
   config.batch_request_buffer_throttle = 5.seconds
+  config.require_client_password_reset_token = true
 end
